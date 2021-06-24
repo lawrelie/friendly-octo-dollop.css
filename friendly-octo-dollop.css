@@ -3,6 +3,7 @@
     --lfod-layout--overflow: visible;
     --lfod-root--overflow-block: visible;
     --lfod-root--overflow-inline: hidden;
+    --lfod-root--surface: none;
     --lfod-typography--margin: max(var(--lvf-layout-grid--margin), calc((100vw - 32rem)/2));
     --lfod-typography--overflow: ellipsis;
     --lfod-typography-code--margin: 0em;
@@ -21,7 +22,7 @@
     --lfod-typography-preformatted--has-shape: 0;
     --lfod-typography-themantic-break--content: none;
     --lfod-typography-themantic-break--has-margin-block-start: 0;
-    background: hsl(var(--lvf-color-surface--hsl));
+    background: var(--lfod-root--surface) hsl(var(--lvf-color-surface--hsl));
     color: hsl(var(--lvf-color-on-surface--hsl), var(--lvf-color--emphasis-high));
     display: block;
     font: var(--lvf-typography-body1--weight) medium / 2 var(--lvf-typography-body1--font);
