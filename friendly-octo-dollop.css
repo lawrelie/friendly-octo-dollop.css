@@ -422,3 +422,6 @@ style {
     place-content: center;
     place-items: center;
 }
+.lvf-card {
+    --lfod-typography--margin: 0rem;
+}
