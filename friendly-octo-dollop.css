@@ -370,7 +370,7 @@ strong {
 }
 ul {
     display: block;
-    list-style: decimal;
+    list-style: disc;
     margin-block-start: calc(2em*var(--lfod-typography-list--has-margin-block-start));
     margin-block-end: calc(2em*var(--lfod-typography-list--has-margin-block-end));
     margin-inline-start: calc(2em + var(--lfod-typography--margin));
