@@ -37,7 +37,6 @@
     text-align: start;
     text-indent: 0;
     text-transform: var(--lvf-typography-body1--case);
-    transition: none;
     white-space: normal;
 }
 *,
@@ -77,6 +76,7 @@
     text-indent: inherit;
     text-overflow: var(--lfod-typography--overflow);
     text-transform: inherit;
+    transition: none;
     white-space: inherit;
     /* Sizes */
     block-size: auto;
@@ -124,7 +124,7 @@ button {
     place-items: center;
     text-align: center;
     text-transform: var(--lvf-typography-button--case);
-    transition: all var(--lvf-motion-small);
+    transition: var(--lvf-button--motion);
     white-space: nowrap;
     /* Sizes */
     block-size: var(--lvf-button--block-size);
@@ -262,6 +262,7 @@ textarea {
     padding-inline-end: var(--lvf-text-field--padding-inline-end);
     resize: var(--lvf-text-field--resize);
     text-transform: var(--lvf-typography-body1--case);
+    transition: var(--lvf-text-field--motion);
     white-space: var(--lvf-text-field--white-space);
     /* Sizes */
     block-size: var(--lvf-text-field--block-size);
