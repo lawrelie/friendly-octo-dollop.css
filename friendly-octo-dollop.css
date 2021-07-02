@@ -361,6 +361,7 @@ pre {
         --lfod-typography-code--surface: none;
     }
 span,
+cite,
 label,
 time {
     display: inline;
