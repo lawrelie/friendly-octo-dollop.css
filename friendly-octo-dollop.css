@@ -21,6 +21,7 @@
     --lfod-typography-preformatted--has-margin-inline-end: 0;
     --lfod-typography-preformatted--has-shape: 0;
     --lfod-typography-themantic-break--content: none;
+    --lfod-typography-themantic-break--scale: 1;
     --lfod-typography-themantic-break--has-margin-block-start: 0;
     background: var(--lfod-root--surface) hsl(var(--lvf-color-surface--hsl));
     color: hsl(var(--lvf-color-on-surface--hsl), var(--lvf-color--emphasis-high));
@@ -232,7 +233,7 @@ h6 > * {
 }
 hr {
     display: block;
-    margin-block-start: calc(2em*var(--lfod-typography-themantic-break--has-margin-block-start));
+    margin-block-start: calc(2em*var(--lfod-typography-themantic-break--scale)*var(--lfod-typography-themantic-break--has-margin-block-start));
 }
     hr::before {
         display: inline;
