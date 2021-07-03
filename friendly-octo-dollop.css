@@ -144,7 +144,7 @@ code {
     color: var(--lfod-typography-code--color-on-surface, hsl(var(--lvf-color-on-surface--hsl), var(--lvf-color--emphasis-high)));
     display: inline;
     font: var(--lvf-typography-code--weight) var(--lfod-typography-code--size, 0.875em) / calc(24/14) var(--lvf-typography-code--font);
-    letter-spacing: 0.015625em;
+    letter-spacing: calc(0.015625em/0.875);
     margin: var(--lfod-typography-code--margin);
     margin-inline-start: calc(var(--lfod-typography-code--margin)*var(--lfod-typography-code--has-margin-inline-start));
     margin-inline-end: calc(var(--lfod-typography-code--margin)*var(--lfod-typography-code--has-margin-inline-end));
@@ -163,6 +163,7 @@ article,
 aside,
 body,
 fieldset,
+figure,
 footer,
 form,
 header,
@@ -172,6 +173,16 @@ main,
 nav,
 section {
     display: block;
+}
+figcaption {
+    color: hsl(var(--lvf-color-on-surface--hsl), var(--lvf-color--emphasis-medium));
+    display: block;
+    font: var(--lvf-typography-caption--weight) 0.75em / 2;
+    font-feature-settings: var(--lvf-typography--features);
+    letter-spacing: calc(0.025em/0.75);
+    margin-inline-start: var(--lfod-typography--margin);
+    margin-inline-end: var(--lfod-typography--margin);
+    text-transform: var(--lvf-typography-caption--case);
 }
 em,
 i {
@@ -344,7 +355,7 @@ pre {
     box-shadow: var(--lvf-elevation-1--shadow);
     display: block;
     font: var(--lvf-typography-monospace--weight) 0.875em / calc(24/14) var(--lvf-typography-monospace--font);
-    letter-spacing: 0.015625em;
+    letter-spacing: calc(0.015625em/0.875);
     margin: var(--lfod-typography--margin-block, 2em);
     margin-inline-start: 0;
     margin-inline-end: calc(var(--lvf-layout-grid--margin)*var(--lfod-typography-preformatted--has-margin-inline-end));
