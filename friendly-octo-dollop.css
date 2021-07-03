@@ -257,6 +257,9 @@ hr {
     * + hr {
         --lfod-typography-themantic-break--has-margin-block-start: 1;
     }
+iframe {
+    display: inline-block;
+}
 img {
     display: inline-block;
     max-block-size: 100%;
