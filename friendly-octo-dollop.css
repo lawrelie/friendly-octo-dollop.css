@@ -102,6 +102,13 @@ address {
     margin-block-end: calc(var(--lfod-typography--margin-block, 2em)*var(--lfod-typography--has-margin-block-end));
     margin-inline-start: 2em;
 }
+audio,
+img,
+video {
+    display: inline-block;
+    max-block-size: 100%;
+    max-inline-size: 100%;
+}
 blockquote {
     --lfod-typography-preformatted--has-margin-inline-end: 1;
     display: block;
@@ -259,11 +266,6 @@ hr {
     }
 iframe {
     display: inline-block;
-}
-img {
-    display: inline-block;
-    max-block-size: 100%;
-    max-inline-size: 100%;
 }
 input,
 output,
