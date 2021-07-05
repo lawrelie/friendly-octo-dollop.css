@@ -191,6 +191,10 @@ figcaption {
     margin-inline-end: var(--lfod-typography--margin);
     text-transform: var(--lvf-typography-caption--case);
 }
+figcaption > * {
+    --lfod-typography--margin: 0rem;
+    --lvf-layout-grid--margin: 0rem;
+}
 em,
 i {
     display: inline;
@@ -252,6 +256,7 @@ h4 > *,
 h5 > *,
 h6 > * {
     --lfod-typography--margin: 0rem;
+    --lvf-layout-grid--margin: 0rem;
 }
 hr {
     display: block;
@@ -340,6 +345,7 @@ ol {
 }
 ol > * {
     --lfod-typography--margin: 0rem;
+    --lvf-layout-grid--margin: 0rem;
 }
 p {
     display: block;
@@ -353,6 +359,7 @@ p {
     }
 p > * {
     --lfod-typography--margin: 0rem;
+    --lvf-layout-grid--margin: 0rem;
 }
 pre {
     background: var(--lvf-elevation-1--overlay);
@@ -398,6 +405,7 @@ ul {
 }
 ul > * {
     --lfod-typography--margin: 0rem;
+    --lvf-layout-grid--margin: 0rem;
 }
 [hidden],
 head,
