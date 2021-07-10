@@ -24,7 +24,7 @@
     display: block;
     font: var(--lvf-typography-body1--weight) medium / 2 var(--lvf-typography-body1--font);
     font-feature-settings: normal;
-    letter-spacing: 0;
+    letter-spacing: 0.03125em;
     list-style: disc;
     overflow-x: var(--lfod-root--overflow-inline);
     overflow-y: var(--lfod-root--overflow-block);
