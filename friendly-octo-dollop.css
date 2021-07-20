@@ -23,18 +23,13 @@
     color: hsl(var(--lvf-color-on-surface--hsl), var(--lvf-color--emphasis-high));
     display: block;
     font: var(--lvf-typography-body1--weight) medium / 2 var(--lvf-typography-body1--font);
-    font-feature-settings: normal;
     letter-spacing: 0.03125em;
-    list-style: disc;
     overflow-x: var(--lfod-root--overflow-inline);
     overflow-y: var(--lfod-root--overflow-block);
     overflow-block: var(--lfod-root--overflow-block);
     overflow-inline: var(--lfod-root--overflow-inline);
     overflow-wrap: break-word;
-    text-align: start;
-    text-indent: 0;
     text-transform: var(--lvf-typography-body1--case);
-    white-space: normal;
 }
 *,
 ::before,
@@ -47,47 +42,16 @@
     --lfod-typography-headline--has-margin-block-end: 1;
     --lfod-typography-list--has-margin-block-start: var(--lfod-typography--has-margin-block-start);
     --lfod-typography-list--has-margin-block-end: var(--lfod-typography--has-margin-block-end);
+    all: unset;
     appearance: none;
-    background: none;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
     box-sizing: border-box;
-    color: inherit;
-    flex-flow: nowrap;
-    font: inherit;
-    font-feature-settings: inherit;
-    gap: 0;
-    grid: none;
-    grid-area: auto;
-    letter-spacing: inherit;
-    list-style: inherit;
-    margin: 0;
+    display: revert;
+    list-style: revert;
     -webkit-mask: var(--lfod-css-mask);
     mask: var(--lfod-css-mask);
     object-fit: contain;
-    object-position: center;
-    opacity: 1;
-    overflow: visible;
-    overflow-wrap: inherit;
-    padding: 0;
-    place-content: normal;
-    place-items: normal;
-    resize: none;
-    text-align: inherit;
-    text-decoration: none;
-    text-indent: inherit;
+    outline: revert;
     text-overflow: var(--lfod-typography--overflow);
-    text-transform: inherit;
-    transition: none;
-    white-space: inherit;
-    /* Sizes */
-    block-size: auto;
-    inline-size: auto;
-    max-block-size: none;
-    max-inline-size: none;
-    min-block-size: 0;
-    min-inline-size: 0;
 }
 a {
     background: var(--lfod-typography-link--color-surface, none);
@@ -337,7 +301,6 @@ li > :first-child:last-child {
 }
 ol {
     display: block;
-    list-style: decimal;
     margin-block-start: calc(var(--lfod-typography--margin-block, 2em)*var(--lfod-typography-list--has-margin-block-start));
     margin-block-end: calc(var(--lfod-typography--margin-block, 2em)*var(--lfod-typography-list--has-margin-block-end));
     margin-inline-start: calc(2em + var(--lfod-typography--margin));
@@ -397,7 +360,6 @@ strong {
 }
 ul {
     display: block;
-    list-style: disc;
     margin-block-start: calc(var(--lfod-typography--margin-block, 2em)*var(--lfod-typography-list--has-margin-block-start));
     margin-block-end: calc(var(--lfod-typography--margin-block, 2em)*var(--lfod-typography-list--has-margin-block-end));
     margin-inline-start: calc(2em + var(--lfod-typography--margin));
