@@ -45,6 +45,7 @@
     all: unset;
     appearance: none;
     box-sizing: border-box;
+    cursor: revert;
     display: revert;
     list-style: revert;
     -webkit-mask: var(--lfod-css-mask);
