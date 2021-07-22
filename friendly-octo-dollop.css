@@ -158,7 +158,6 @@ figcaption {
 }
 figcaption > * {
     --lfod-typography--margin: 0rem;
-    --lvf-layout-grid--margin: 0rem;
 }
 em,
 i {
@@ -221,7 +220,6 @@ h4 > *,
 h5 > *,
 h6 > * {
     --lfod-typography--margin: 0rem;
-    --lvf-layout-grid--margin: 0rem;
 }
 hr {
     display: block;
@@ -309,7 +307,6 @@ ol {
 }
 ol > * {
     --lfod-typography--margin: 0rem;
-    --lvf-layout-grid--margin: 0rem;
 }
 p {
     display: block;
@@ -323,7 +320,6 @@ p {
     }
 p > * {
     --lfod-typography--margin: 0rem;
-    --lvf-layout-grid--margin: 0rem;
 }
 pre {
     background: var(--lvf-elevation-1--overlay);
@@ -334,10 +330,10 @@ pre {
     letter-spacing: calc(0.015625em/0.875);
     margin: var(--lfod-typography--margin-block, 2em);
     margin-inline-start: 0;
-    margin-inline-end: calc(var(--lvf-layout-grid--margin)*var(--lfod-typography-preformatted--has-margin-inline-end));
+    margin-inline-end: calc(max(1rem, min(var(--lvf-layout-grid--margin), var(--lfod-typography--margin)))*var(--lfod-typography-preformatted--has-margin-inline-end));
     padding: 0.5rem;
-    padding-inline-start: var(--lvf-layout-grid--margin);
-    padding-inline-end: var(--lvf-layout-grid--margin);
+    padding-inline-start: max(1rem, min(var(--lvf-layout-grid--margin), var(--lfod-typography--margin)));
+    padding-inline-end: max(1rem, min(var(--lvf-layout-grid--margin), var(--lfod-typography--margin)));
     white-space: pre-wrap;
 }
     pre > :first-child:last-child {
@@ -368,7 +364,6 @@ ul {
 }
 ul > * {
     --lfod-typography--margin: 0rem;
-    --lvf-layout-grid--margin: 0rem;
 }
 [hidden],
 head,
