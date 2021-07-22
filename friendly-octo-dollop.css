@@ -76,6 +76,7 @@ video {
 }
 blockquote {
     --lfod-typography-preformatted--has-margin-inline-end: 1;
+    --lfod-typography-preformatted--has-shape: 1;
     display: block;
     margin-block-start: calc(var(--lfod-typography--margin-block, 2em)*var(--lfod-typography--has-margin-block-start));
     margin-block-end: calc(var(--lfod-typography--margin-block, 2em)*var(--lfod-typography--has-margin-block-end));
@@ -322,6 +323,11 @@ p > * {
     --lfod-typography--margin: 0rem;
 }
 pre {
+    --lfod-typography-preformatted--margin-inline: max(1rem, min(var(--lvf-layout-grid--margin), var(--lfod-typography--margin)));
+    --lfod-typography-preformatted--padding-inline: calc(
+        var(--lfod-typography-preformatted--margin-inline)
+        + (1rem - var(--lfod-typography-preformatted--margin-inline))*var(--lfod-typography-preformatted--has-margin-inline-end)/2
+    );
     background: var(--lvf-elevation-1--overlay);
     border-radius: calc(var(--lvf-shape-medium--size)*var(--lfod-typography-preformatted--has-shape));
     box-shadow: var(--lvf-elevation-1--shadow);
@@ -330,10 +336,10 @@ pre {
     letter-spacing: calc(0.015625em/0.875);
     margin: var(--lfod-typography--margin-block, 2em);
     margin-inline-start: 0;
-    margin-inline-end: calc(max(1rem, min(var(--lvf-layout-grid--margin), var(--lfod-typography--margin)))*var(--lfod-typography-preformatted--has-margin-inline-end));
+    margin-inline-end: calc(var(--lfod-typography-preformatted--margin-inline)*var(--lfod-typography-preformatted--has-margin-inline-end));
     padding: 0.5rem;
-    padding-inline-start: max(1rem, min(var(--lvf-layout-grid--margin), var(--lfod-typography--margin)));
-    padding-inline-end: max(1rem, min(var(--lvf-layout-grid--margin), var(--lfod-typography--margin)));
+    padding-inline-start: var(--lfod-typography-preformatted--padding-inline);
+    padding-inline-end: var(--lfod-typography-preformatted--padding-inline);
     white-space: pre-wrap;
 }
     pre > :first-child:last-child {
