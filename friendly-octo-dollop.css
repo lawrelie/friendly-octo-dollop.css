@@ -86,11 +86,11 @@ button {
     background:
         linear-gradient(hsl(var(--lvf-color-surface--hsl), var(--lvf-states--overlay--opacity)), hsl(var(--lvf-color-surface--hsl), var(--lvf-states--overlay--opacity))),
         linear-gradient(var(--lvf-button--elevation--overlay), var(--lvf-button--elevation--overlay)),
-        hsl(var(--lvf-button--color-surface--hsl, var(--lvf-color-on-surface--hsl)));
+        hsl(var(--lvf-button--color-surface--hsl, var(--lvf-color-on-surface--hsl)), var(--lvf-button--surface--opacity));
     border: none;
     border-radius: var(--lvf-button--shape--size);
     box-shadow: var(--lvf-button--elevation--shadow);
-    color: hsl(var(--lvf-button--color-on-surface--hsl, var(--lvf-color-surface--hsl)), var(--lvf-color--emphasis-high));
+    color: hsl(var(--lvf-button--color-on-surface--hsl, var(--lvf-color-surface--hsl)), var(--lvf-button--color--emphasis));
     display: inline-flex;
     font: var(--lvf-typography-button);
     font-feature-settings: var(--lvf-typography--features);
@@ -409,12 +409,11 @@ style {
 .lfod-layout__header {
     border-block-end: var(--lvf-divider--size) solid hsl(var(--lvf-color-on-surface--hsl), var(--lvf-divider--opacity));
 }
-.lfod-layout-navigation {
-    background: var(--lvf-elevation-1--overlay);
+.lfod-navigation {
     display: flex;
     inline-size: 100vw;
     max-inline-size: 100%;
-    padding: calc(4rem + var(--lvf-density)/2);
+    padding: calc(var(--lvf-app-bar--block-size) - var(--lvf-density)/2);
     padding-inline-start: 0;
     padding-inline-end: 0;
     place-content: center;
