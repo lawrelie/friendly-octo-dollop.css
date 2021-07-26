@@ -50,6 +50,8 @@
     list-style: revert;
     -webkit-mask: var(--lfod-css-mask);
     mask: var(--lfod-css-mask);
+    min-block-size: 0;
+    min-inline-size: 0;
     object-fit: contain;
     outline: revert;
     text-overflow: var(--lfod-typography--overflow);
