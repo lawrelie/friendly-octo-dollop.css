@@ -4,7 +4,7 @@
     --lfod-root--overflow-block: visible;
     --lfod-root--overflow-inline: hidden;
     --lfod-root--surface: none;
-    --lfod-typography--margin: max(var(--lvf-layout-grid--margin), calc((100vw - 32rem)/2));
+    --lfod-typography--margin: max(var(--lvf-layout-grid--margin), calc((100vw - 31rem - 30rem*0.03125)/2));
     --lfod-typography--overflow: ellipsis;
     --lfod-typography-code--margin: 0em;
     --lfod-typography-code--has-margin-inline-start: 1;
