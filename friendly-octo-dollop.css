@@ -54,6 +54,7 @@
     min-inline-size: 0;
     object-fit: contain;
     outline: revert;
+    text-decoration: revert;
     text-overflow: var(--lfod-typography--overflow);
 }
 a {
