@@ -391,8 +391,8 @@ style {
 :enabled:checked,
 :any-link:active,
 :enabled:active {
-    --lfod-typography-link--color-surface: hsl(var(--lvf-color-on-surface--hsl), 1);
-    --lfod-typography-link--color-on-surface: hsl(var(--lvf-color-surface--hsl), var(--lvf-color--emphasis-high));
+    --lfod-typography-link--color-surface: var(--lfod-typography-link--interactive--color-surface, hsl(var(--lvf-color-on-surface--hsl), 1));
+    --lfod-typography-link--color-on-surface: var(--lfod-typography-link--interactive--color-on-surface, hsl(var(--lvf-color-surface--hsl), var(--lvf-color--emphasis-high)));
 }
 :first-child {
     --lfod-typography--has-margin-block-start: 0;
